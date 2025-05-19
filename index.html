@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Previsão de Aprovação Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Previsão de Aprovação Escolar</h1>
+        <p>Este projeto utiliza aprendizado de máquina para prever a aprovação de estudantes com base em variáveis como notas, frequência, apoio familiar e acesso à internet.</p>
+
+        <form id="formulario">
+            <label for="nota1">Nota AV1:</label>
+            <input type="number" id="nota1" name="nota1" min="0" max="10" step="0.1" value="6">
+
+            <label for="nota2">Nota AV2:</label>
+            <input type="number" id="nota2" name="nota2" min="0" max="10" step="0.1" value="6">
+
+            <label for="frequencia">Frequência (%):</label>
+            <input type="number" id="frequencia" name="frequencia" min="0" max="100" step="1" value="85">
+
+            <label for="internet">Tem acesso à internet?</label>
+            <select id="internet" name="internet">
+                <option value="1">Sim</option>
+                <option value="0">Não</option>
+            </select>
+
+            <label for="apoio">Tem apoio familiar?</label>
+            <select id="apoio" name="apoio">
+                <option value="1">Sim</option>
+                <option value="0">Não</option>
+            </select>
+
+            <button type="button" onclick="verificarAprovacao()">Verificar Aprovação</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
